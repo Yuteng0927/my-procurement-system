@@ -1,0 +1,118 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-image: url('../images/background.jpg');
+    background-size: cover;
+    color: white;
+}
+
+header {
+    background-color: darkgreen;
+    color: white;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1em;
+}
+
+header .company-name {
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+header nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+}
+
+header nav ul li {
+    margin: 0 1em;
+}
+
+header nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+main {
+    text-align: center;
+    padding: 2em;
+}
+
+footer {
+    background-color: darkgreen;
+    color: white;
+    text-align: center;
+    padding: 1em 0;
+    position: fixed;
+    width: 100%;
+    bottom: 0;
+}
+
+.form-container {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 2em;
+    border-radius: 10px;
+    display: inline-block;
+}
+
+input, select {
+    margin-bottom: 1em;
+    padding: 0.5em;
+    width: calc(100% - 1em);
+}
+
+button {
+    background-color: darkgreen;
+    color: white;
+    padding: 1em;
+    border: none;
+    cursor: pointer;
+    font-size: 1em;
+}
+
+button:hover {
+    background-color: green;
+}
+
+.tab-container {
+    display: flex;
+    justify-content: center;
+    margin-top: 2em;
+}
+
+.tab-container .tab {
+    text-align: center;
+    margin: 0 1em;
+    cursor: pointer;
+}
+
+.tab-container .tab img {
+    width: 100px;
+    height: 100px;
+}
+
+.tab-container .tab-title {
+    margin-top: 0.5em;
+}
+
+.bar-graph {
+    width: 75%;
+    margin: 2em auto;
+}
+
+.dashboard {
+    display: none;
+}
+
+.dashboard.active {
+    display: block;
+}
+
+.time-period, .overview {
+    margin-bottom: 1em;
+}

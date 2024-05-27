@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ordering - Lab Procurement System</title>
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+    <header>
+        <div class="company-name">Sino Biological US</div>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="ordering.html">Ordering</a></li>
+                <li><a href="inventory.html">Inventory</a></li>
+                <li><a href="spend_dashboard.html">Spend Dashboard</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <h1>Ordering</h1>
+        <div class="form-container">
+            <form>
+                <label for="requester">Requester</label>
+                <select id="requester" name="requester">
+                    <option value="Kurt">Kurt</option>
+                    <option value="Honglei">Honglei</option>
+                    <option value="Yuteng">Yuteng</option>
+                </select>
+
+                <label for="department">Department</label>
+                <select id="department" name="department">
+                    <option value="Culture">Culture</option>
+                    <option value="Biop">Biop</option>
+                    <option value="QC">QC</option>
+                    <option value="Operations">Operations</option>
+                </select>
+
+                <label for="order-item">Order Item</label>
+                <input type="text" id="order-item" name="order-item">
+
+                <label for="vendor">Vendor</label>
+                <input type="text" id="vendor" name="vendor">
+
+                <label for="vendor-cat">Vendor Cat#</label>
+                <input type="text" id="vendor-cat" name="vendor-cat">
+
+                <label for="qty">QTY</label>
+                <input type="number" id="qty" name="qty">
+
+                <label for="net-price">Net Price</label>
+                <input type="number" id="net-price" name="net-price">
+
+                <label for="category">Category</label>
+                <select id="category" name="category">
+                    <option value="Culture General Consumables">Culture General Consumables</option>
+                    <option value="Biop General Consumables">Biop General Consumables</option>
+                </select>
+
+                <label for="urgent">Urgent</label>
+                <select id="urgent" name="urgent">
+                    <option value="Y">Y</option>
+                    <option value="N">N</option>
+                </select>
+
+                <label for="eta">ETA</label>
+                <input type="date" id="eta" name="eta">
+
+                <button type="submit">Submit</button>
+            </form>
+        </div>
+        <a href="path/to/order_master_file.xlsx">Order Master File</a>
+    </main>
+    <footer>
+        <p>&copy; 2024 Sino Biological US</p>
+    </footer>
+</body>
+</html>
