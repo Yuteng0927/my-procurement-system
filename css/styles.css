@@ -2,13 +2,14 @@ body {
     font-family: Arial, sans-serif;
     margin: 0;
     padding: 0;
-    background-image: url('../images/background.jpg');
+    background-image: url('../images/background.jpeg');
     background-size: cover;
     color: white;
+    text-align: center;
 }
 
 header {
-    background-color: darkgreen;
+    background-color: #006400; /* Prettier dark green color */
     color: white;
     display: flex;
     justify-content: space-between;
@@ -17,7 +18,7 @@ header {
 }
 
 header .company-name {
-    font-size: 1.5em;
+    font-size: 2em; /* Larger font size */
     font-weight: bold;
 }
 
@@ -36,15 +37,20 @@ header nav ul li a {
     color: white;
     text-decoration: none;
     font-weight: bold;
+    font-size: 1.2em; /* Larger font size */
 }
 
 main {
     text-align: center;
     padding: 2em;
+    background-color: rgba(0, 0, 0, 0.5); /* Ensure background image visibility */
+    border-radius: 10px;
+    display: inline-block;
+    margin-top: 2em;
 }
 
 footer {
-    background-color: darkgreen;
+    background-color: #006400; /* Prettier dark green color */
     color: white;
     text-align: center;
     padding: 1em 0;
@@ -67,7 +73,7 @@ input, select {
 }
 
 button {
-    background-color: darkgreen;
+    background-color: #006400; /* Prettier dark green color */
     color: white;
     padding: 1em;
     border: none;
