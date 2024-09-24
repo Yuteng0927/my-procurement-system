@@ -12,7 +12,6 @@
         <nav>
             <ul>
                 <li><a href="index.html">Home</a></li>
-                <li><a href="ordering.html">Ordering</a></li>
                 <li><a href="inventory.html">Inventory</a></li>
                 <li><a href="spend_dashboard.html">Spend Dashboard</a></li>
             </ul>
@@ -21,30 +20,215 @@
     <main>
         <h1>Inventory</h1>
         <div class="tab-container">
-            <div class="tab">
+            <div class="tab" onclick="showTable('culture-table')">
                 <img src="images/culture.png" alt="Culture">
                 <div class="tab-title">Culture</div>
             </div>
-            <div class="tab">
+            <div class="tab" onclick="showTable('biop-table')">
                 <img src="images/biop.png" alt="Biop">
                 <div class="tab-title">Biop</div>
             </div>
-            <div class="tab">
+            <div class="tab" onclick="showTable('qc-table')">
                 <img src="images/qc.png" alt="QC">
                 <div class="tab-title">QC</div>
             </div>
-            <div class="tab">
+            <div class="tab" onclick="showTable('operations-table')">
                 <img src="images/operations.png" alt="Operations">
                 <div class="tab-title">Operations</div>
             </div>
-            <div class="tab">
-                <img src="images/master.png" alt="Master">
-                <div class="tab-title">Master</div>
-            </div>
+        </div>
+
+        <!-- Culture Inventory Table -->
+        <div id="culture-table" class="inventory-table" style="display:none;">
+            <h2>Culture Inventory</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Item</th>
+                        <th>Specs/Packs</th>
+                        <th>Unit</th>
+                        <th>QTY</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>AcroPrep™ 24-Well Filter Plates, Cytiva</td>
+                        <td>8/Pack</td>
+                        <td>Pack</td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <td>Axygen Microplate Sealing Film and Tapes</td>
+                        <td>100/Pack</td>
+                        <td>Pack</td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <td>Corning Costar Flat Bottom Cell Culture Plates</td>
+                        <td>100/Case</td>
+                        <td>Case</td>
+                        <td>1</td>
+                    </tr>
+                    <tr>
+                        <td>Fisherbrand Shaker Flasks, Capacity: 2000 mL</td>
+                        <td>4/Case</td>
+                        <td>Case</td>
+                        <td>4</td>
+                    </tr>
+                    <tr>
+                        <td>Fisherbrand Shaker Flasks, Capacity: 250 mL</td>
+                        <td>12/Case</td>
+                        <td>Case</td>
+                        <td>2</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- Biop Inventory Table -->
+        <div id="biop-table" class="inventory-table" style="display:none;">
+            <h2>Biop Inventory</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Item</th>
+                        <th>Specs/Packs</th>
+                        <th>Unit</th>
+                        <th>QTY</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Fisherbrand Disposable Graduated Transfer Pipets</td>
+                        <td>500/Pack</td>
+                        <td>Pack</td>
+                        <td>20</td>
+                    </tr>
+                    <tr>
+                        <td>Greiner Bio-One 96 Well 2mL Storage Plate</td>
+                        <td>50/Case</td>
+                        <td>Case</td>
+                        <td>18</td>
+                    </tr>
+                    <tr>
+                        <td>GSC Go Science Crazy Flask Brush</td>
+                        <td>Each</td>
+                        <td>Each</td>
+                        <td>5</td>
+                    </tr>
+                    <tr>
+                        <td>HiLoad 16/600 Superdex column</td>
+                        <td>Each</td>
+                        <td>Each</td>
+                        <td>10</td>
+                    </tr>
+                    <tr>
+                        <td>Thermo Scientific Bottle Top Filters 150mL</td>
+                        <td>12/Case</td>
+                        <td>Case</td>
+                        <td>20</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- QC Inventory Table -->
+        <div id="qc-table" class="inventory-table" style="display:none;">
+            <h2>QC Inventory</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Item</th>
+                        <th>Specs/Packs</th>
+                        <th>Unit</th>
+                        <th>QTY</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Applied Biosystems™ MicroAmp™ Optical Adhesive Film</td>
+                        <td>Each</td>
+                        <td>Each</td>
+                        <td>20</td>
+                    </tr>
+                    <tr>
+                        <td>Certified polypropylene vial, screw</td>
+                        <td>100/Pack</td>
+                        <td>Pack</td>
+                        <td>25</td>
+                    </tr>
+                    <tr>
+                        <td>Hampton Research ALUMASEAL II Sealing Film</td>
+                        <td>100/Pack</td>
+                        <td>Pack</td>
+                        <td>10</td>
+                    </tr>
+                    <tr>
+                        <td>Octet® ProA Biosensors / Tray</td>
+                        <td>Each</td>
+                        <td>Each</td>
+                        <td>8</td>
+                    </tr>
+                    <tr>
+                        <td>200 µL Pipette Tips</td>
+                        <td>960/Pack</td>
+                        <td>Pack</td>
+                        <td>20</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+
+        <!-- Operations Inventory Table -->
+        <div id="operations-table" class="inventory-table" style="display:none;">
+            <h2>Operations Inventory</h2>
+            <table>
+                <thead>
+                    <tr>
+                        <th>Item</th>
+                        <th>Specs/Packs</th>
+                        <th>Unit</th>
+                        <th>QTY</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Sony Wireless Speaker</td>
+                        <td>Each</td>
+                        <td>Each</td>
+                        <td>10</td>
+                    </tr>
+                    <tr>
+                        <td>Internal SSD</td>
+                        <td>Each</td>
+                        <td>Each</td>
+                        <td>15</td>
+                    </tr>
+                    <tr>
+                        <td>Anker USB C Cable</td>
+                        <td>Each</td>
+                        <td>Each</td>
+                        <td>10</td>
+                    </tr>
+                    <tr>
+                        <td>Rubbermaid Trash/Garbage Can</td>
+                        <td>Each</td>
+                        <td>Each</td>
+                        <td>10</td>
+                    </tr>
+                    <tr>
+                        <td>Samsung S60UA Series 27" WQHD 1440p Monitor</td>
+                        <td>Each</td>
+                        <td>Each</td>
+                        <td>10</td>
+                    </tr>
+                </tbody>
+            </table>
         </div>
     </main>
     <footer>
         <p>&copy; 2024 Sino Biological US</p>
     </footer>
+    <script src="js/scripts.js"></script>
 </body>
 </html>
