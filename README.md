@@ -2,11 +2,14 @@
 
 ## Overview
 #### The Lab Procurement System is a web-based platform designed to manage and visualize laboratory procurement data. The system offers features for inventory tracking and spending analytics, with specific focus on categories such as Culture, Biop, QC, and Operations. This project includes three main HTML files for different sections of the system, each providing an intuitive user interface for browsing and interacting with lab data.
+![image](https://github.com/Yuteng0927/my-procurement-system/blob/main/images/Home%20page.png)
 
 ## Project Structure
 * index.html: The homepage that introduces users to the Lab Procurement System.
 * inventory.html: The inventory management page that displays tables of items categorized by departments such as Culture, Biop, QC, and Operations.
+![image](https://github.com/Yuteng0927/my-procurement-system/blob/main/images/Inventory%20tab.png)
 * spend_dashboard.html: A dashboard for visualizing procurement spending analytics, providing insights into spending across different departments.
+![image](https://github.com/Yuteng0927/my-procurement-system/blob/main/images/Spend%20tab.png)
 
 ## Future Enhancements
 * Adding real-time inventory updates with a backend database.
